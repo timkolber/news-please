@@ -7,5 +7,6 @@ __pycache__/
 .idea/
 .DS_Store
 news-please.iml
-
+cc_download_articles/
+cc_download_warc/
 venv/
