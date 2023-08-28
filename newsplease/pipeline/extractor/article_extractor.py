@@ -20,13 +20,13 @@ class Extractor:
         """
         def proc_instance(instance):
             if instance is not None:
-                self.log.info('Extractor initialized: %s', extractor)
+                self.log.debug('Extractor initialized: %s', extractor)
                 self.extractor_list.append(instance)
             else:
                 self.log.error("Misconfiguration: An unknown Extractor was found and"
                                " will be ignored: %s", extractor)
-
         self.log = logging.getLogger(__name__)
+        self.log.setLevel(logging.INFO)
         self.extractor_list = []
         for extractor in extractor_list:
 
